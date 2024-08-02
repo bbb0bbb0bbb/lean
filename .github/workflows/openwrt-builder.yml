@@ -78,6 +78,9 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
+    - name: Setup Debug Session
+      uses: eyu-dev/debugger-action@master
+        
     - name: Download package
       id: package
       run: |
